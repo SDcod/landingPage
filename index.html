@@ -25,13 +25,13 @@
           style="height: 80px"
           class="d-flex flex-row align-items-center justify-content-between px-lg-5 mx-lg-5"
         >
-          <a class="p-lg-5" aria-current="page" href="#delhi-ncr"
+          <a class="p-lg-5 " aria-current="page" href="#delhi-ncr"
             ><img
               style="width: 120px"
               alt="Urban Company"
               src="https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1631097450980-d2de38.png"
           /></a>
-          <div class="header-links p-lg-5">
+          <div class="header-links p-lg-5 d-sm-block d-none">
             <ul class="list-unstyled d-flex flex-row gap-4 fw-bold">
               <li class="">
                 <a
@@ -65,7 +65,7 @@
           class="hero-container d-flex flex-column justify-content-center align-items-center"
         >
           <ol
-            class="list-unstyled text-decoration-none text-white d-flex flex-row"
+            class="list-unstyled text-decoration-none text-white d-none flex-row d-sm-flex"
             itemscope=""
             itemtype="http://schema.org/BreadcrumbList"
           >
@@ -100,7 +100,7 @@
               ><meta itemprop="position" content="2" />
             </li>
           </ol>
-          <h1 style="font-size: 50px">Home services, on demand.</h1>
+          <h1 class="d-none d-sm-block" style="font-size: 50px">Home services, on demand.</h1>
           <div
             class="location_search d-flex flex-lg-row flex-md-column flex-column gap-4 align-items-center pt-4 justify-content-center"
           >
@@ -111,24 +111,24 @@
                 id="dropdownMenuButton1"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                style="max-width: 300px"
+               
               >
                 <i class="fa-solid fa-location-dot"></i>
                 location
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <div class="gps-container d-flex flex-row align-items-center"> 
+                <div class="gps-container d-flex flex-row align-items-center" style="max-width:400px ;"> 
 
                   <li class="mx-2"><i class="fa-solid fa-location-dot"></i> Current Location</li>
                   <li><a class="dropdown-item text-primary" href="#">Detect using GPS ></a></li>
                 </div>
                 <li>
-                   <div class="search p-3">
+             <div class="search p-3">
               <i class="fa-solid fa-magnifying-glass"></i>
               <input
                 class="border-0"
                 type="search"
-                style="width: 250px;"
+                style="max-width: 250px;"
                 placeholder="Search for Society/Apartment..."
               />
             </div>
@@ -151,14 +151,14 @@
       <div class="on_demand_services bg-white">
         <div class="d-flex flex-column align-items-lg-center">
           <div
-            class="d-flex flex-row align-items-center justify-content-center shadow rounded-1 bg-white position-relative gap-4 py-5"
-            style="top: -60px; width: 816px"
+            class="services_container d-flex flex-sm-row flex-wrap justify-content-center shadow rounded-1 bg-white position-relative gap-4 p-5"
+            style="top: -60px;"
           >
             <div
-              class="d-flex flex-column align-items-center justify-content-center"
+              class="service_item d-flex flex-column align-items-center justify-content-center"
               title="Salon for Women"
             >
-              <div class="service-item">
+              <div class="service-img">
                 <img
                   class="Grid__image--IV0GE"
                   src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1609757635235-1a139e.png"
@@ -173,7 +173,7 @@
               class="d-flex flex-column align-items-center justify-content-center"
               title="Hair, Skin &amp; Nails"
             >
-              <div class="service-item">
+              <div class="service-img">
                 <img
                   class="Grid__image--IV0GE"
                   src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/supply/customer-app-supply/1635331606894-7b633f.png"
@@ -188,7 +188,7 @@
               class="d-flex flex-column align-items-center justify-content-center"
               title="Women's Therapies"
             >
-              <div class="service-item">
+              <div class="service-img">
                 <img
                   class="Grid__image--IV0GE"
                   src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/categories/category_v2/category_1312fb60.png"
@@ -203,7 +203,7 @@
               class="d-flex flex-column align-items-center justify-content-center"
               title="Salon for Men"
             >
-              <div class="service-item">
+              <div class="service-img">
                 <img
                   class="Grid__image--IV0GE"
                   src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1609757629780-2b2187.png"
@@ -218,7 +218,7 @@
               class="d-flex flex-column align-items-center justify-content-center"
               title="Men's Therapies"
             >
-              <div class="service-item">
+              <div class="service-img">
                 <img
                   class="Grid__image--IV0GE"
                   src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1609757731250-ba3308.png"
@@ -233,18 +233,18 @@
         </div>
       </div>
 
-      <section class="services_category_container bg-white text-center pb-5">
+      <section class="services_category_container_xsnone bg-white text-center pb-5 ">
         <h1>Home Services</h1>
         <div class="d-flex flex-column align-items-lg-center">
           <div
-            class="d-flex flex-row align-items-center justify-content-center shadow rounded-1 bg-white position-relative gap-4 py-5"
-            style="width: 816px"
+            class="d-flex flex-row align-items-center justify-content-center shadow rounded-1 bg-white position-relative gap-4 p-5 flex-wrap"
+           
           >
             <div
               class="d-flex flex-column align-items-center justify-content-center"
               title="Salon for Women"
             >
-              <div class="service-item">
+              <div class="service-img">
                 <img
                   class="Grid__image--IV0GE"
                   src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1609757635235-1a139e.png"
@@ -259,7 +259,7 @@
               class="d-flex flex-column align-items-center justify-content-center"
               title="Hair, Skin &amp; Nails"
             >
-              <div class="service-item">
+              <div class="service-img">
                 <img
                   class="Grid__image--IV0GE"
                   src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/supply/customer-app-supply/1635331606894-7b633f.png"
@@ -274,7 +274,7 @@
               class="d-flex flex-column align-items-center justify-content-center"
               title="Women's Therapies"
             >
-              <div class="service-item">
+              <div class="service-img">
                 <img
                   class="Grid__image--IV0GE"
                   src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/categories/category_v2/category_1312fb60.png"
@@ -289,7 +289,7 @@
               class="d-flex flex-column align-items-center justify-content-center"
               title="Salon for Men"
             >
-              <div class="service-item">
+              <div class="service-img">
                 <img
                   class="Grid__image--IV0GE"
                   src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1609757629780-2b2187.png"
@@ -304,7 +304,7 @@
               class="d-flex flex-column align-items-center justify-content-center"
               title="Men's Therapies"
             >
-              <div class="service-item">
+              <div class="service-img">
                 <img
                   class="Grid__image--IV0GE"
                   src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1609757731250-ba3308.png"
@@ -325,7 +325,7 @@
    <!-- services container start  -->
             <div class="category_collection_container d-flex flex-row align-items-center" >
               <ul
-                class="d-flex flex-row list-unstyled"
+                class="d-flex flex-sm-row flex-column list-unstyled align-items-center justify-content-center w-100"
                 
               >
                 <li class="">
@@ -424,7 +424,7 @@
    <!-- services container start  -->
             <div class="category_collection_container d-flex flex-row align-items-center" >
               <ul
-                class="d-flex flex-row list-unstyled"
+                       class="d-flex flex-sm-row flex-column list-unstyled align-items-center justify-content-center w-100"
                 
               >
                 <li class="">
@@ -523,7 +523,7 @@
    <!-- services container start  -->
             <div class="category_collection_container d-flex flex-row align-items-center" >
               <ul
-                class="d-flex flex-row list-unstyled"
+                       class="d-flex flex-sm-row flex-column list-unstyled align-items-center justify-content-center w-100"
                 
               >
                 <li class="">
@@ -623,7 +623,7 @@
    <!-- services container start  -->
             <div class="category_collection_container d-flex flex-row align-items-center" >
               <ul
-                class="d-flex flex-row list-unstyled"
+                       class="d-flex flex-sm-row flex-column list-unstyled align-items-center justify-content-center w-100"
                 
               >
                 <li class="">
