@@ -60,10 +60,6 @@ header {
     min-width: 350px;
   }
 
-  .bg-image {
-    background: rgb(135, 134, 134);
-    height: 50vh;
-  }
   .hero-container {
     height: 50vh;
   }
@@ -71,5 +67,12 @@ header {
     width: 100px;
 
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .bg-image {
+    background: rgb(197, 197, 197);
+    height: 50vh;
   }
 }
